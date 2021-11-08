@@ -1,6 +1,9 @@
 package main
 
+import c "orh.aygun/sync-package/channels"
+
 func main() {
-	// AnotherSample()
-	OnceDemo()
+
+	// # Channels
+	c.SimpleChannel()
 }
