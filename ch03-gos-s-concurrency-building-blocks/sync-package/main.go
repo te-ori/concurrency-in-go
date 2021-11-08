@@ -8,5 +8,9 @@ func main() {
 	// c.SimpleChannel()
 	// c.ForRangeChannels()
 	// c.ForRangeWithUnclosedChannels()
-	c.BufferedChannels()
+	// c.BufferedChannels()
+	// c.AnotherSample()
+	// c.ChannelOwnerSmaple()
+	// c.SimpleSelect()
+	c.AnotherSelect()
 }
