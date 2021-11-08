@@ -57,10 +57,6 @@ func OnceWithDifferentFuncs() {
 // 	   `lock`'un açılmasını bekliyor
 // Böylece Deadlock oluşmuş oluyor.
 func OnceDeadLock() {
-<<<<<<< HEAD
-
-=======
->>>>>>> 6497e11 (sync.Pool)
 	var onceA, onceB sync.Once
 	var initB func()
 
