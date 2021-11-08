@@ -9,7 +9,7 @@ type Button struct {
 	Clicked *sync.Cond
 }
 
-func main() {
+func CondBroadcast() {
 	button := Button{Clicked: sync.NewCond(&sync.Mutex{})}
 	subscribe := func(c *sync.Cond, fn func()) {
 		var goroutineRunning sync.WaitGroup
