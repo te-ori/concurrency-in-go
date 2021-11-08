@@ -11,6 +11,6 @@ func main() {
 	// c.BufferedChannels()
 	// c.AnotherSample()
 	// c.ChannelOwnerSmaple()
-	// c.SimpleSelect()
-	c.AnotherSelect()
+	c.SimpleSelect()
+	// c.AnotherSelect()
 }
