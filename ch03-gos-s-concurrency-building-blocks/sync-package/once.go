@@ -5,13 +5,7 @@ import (
 	"sync"
 )
 
-func main() {
-	// onceDemo()
-	// onceWithDifferentFuncs()
-	onceDeadLock()
-}
-
-func onceDemo() {
+func OnceDemo() {
 	var count int
 
 	increment := func() {
@@ -33,7 +27,7 @@ func onceDemo() {
 	fmt.Printf("Count is %d\n", count)
 }
 
-func onceWithDifferentFuncs() {
+func OnceWithDifferentFuncs() {
 	var count int
 	increment := func() { count++ }
 	decrement := func() { count-- }
@@ -62,7 +56,7 @@ func onceWithDifferentFuncs() {
 //     tamamlanmasını bekliyor. @3'de ki `Do` çağrısı da devam etmek için @1'deki
 // 	   `lock`'un açılmasını bekliyor
 // Böylece Deadlock oluşmuş oluyor.
-func onceDeadLock() {
+func OnceDeadLock() {
 	var onceA, onceB sync.Once
 	var initB func()
 
