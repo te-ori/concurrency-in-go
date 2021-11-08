@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func CondSignal() {
 	c := sync.NewCond(&sync.Mutex{})
 	queue := make([]interface{}, 0, 10)
 
